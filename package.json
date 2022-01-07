@@ -6,7 +6,9 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel ./src/index.html && parcel watch ./src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "heroku-prebuild": "npm install -f",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": "16.x"
