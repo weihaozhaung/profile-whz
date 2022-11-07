@@ -36,6 +36,29 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <style>
+.rounded:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+section#hero{
+	background-image: url("assets/WHZ_vox.gif");
+  	background-size: cover;
+  	  margin-top: 80px;
+	  margin-bottom: 130px;
+	  margin-right: 80px;
+	  margin-left: 80px;
+}
+section#hero:hover{
+transform: scale(1.1)
+}
+.hero-title{
+	color: lightblue;
+}
+.text-color-bright{
+	color: yellow;
+}
+</style>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -44,14 +67,15 @@
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">WEI-HAO</span>
+      <div class="container" >
+        <h1 class="hero-title load-hidden ">
+          Hi, my name is <span class="text-color-bright">WEI-HAO</span>
           <br />
           <p>I'm a Data Analyst, Web Developer, Retail Trader</p>
           <p>Bachelor of Electronic Engineering,</p>
           <p>Master of Finance and International Business</p>
         </h1>
+
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
             >Know more</a
@@ -81,7 +105,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                Hi! Wei-Hao Here. I am from Taiwan, currently looking for data analyst roles in France. I just graduated from ESSCA business school as a MBA in international business last year and worked as an business data analyst since then. I also majored in Finance and Engineering. I do retail trading and continuously teaching myself new knowledge such as 3D printing, embeded systems, web developing, and blockchain, etc. A diverse interest? Yes, I do enjoy exploring new things and accepting new challenges.  
+                Hi! Wei-Hao Here. I am from Taiwan, currently looking for data analyst roles in France. I just graduated from ESSCA business school as a Master in international business last year and worked as an business data analyst since then. I also majored in Finance and Engineering. I do retail trading and continuously teaching myself new knowledge such as 3D printing, embeded systems, web developing, and blockchain, etc. A diverse interest? Yes, I do enjoy exploring new things and accepting new challenges.  
               </p>
               <p class="about-wrapper__info-text">
                 <p style = "color: blue; text-align: left">*A cat person</p>
@@ -118,7 +142,9 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
+              	<a href = 'https://bigdatafinance.tw/'>
                 <h3 class="project-wrapper__text-title">Big data in Finance</h3>
+            </a>
                 <div>
                   <p class="mb-4">
                       Big Data in Finance (https://bigdatafinance.tw/) is a project organized by the Taiwan Ministry of Science and Technology. I was responsible for maintaining the website including HTML and CSS, sharing information in the fields related to big data, and also analyze visitors' behaviors using Google Analytics to boost page views. The website gained more than 500,000 views during my tenure.
@@ -214,15 +240,45 @@
                 </a>
               </div>
             </div> 
-                 <a rel="noreferrer" 
-                  target="_blank"
-                  class="cta-btn cta-btn--resume "
-                  href="https://www.linkedin.com/in/wei-hao-zhuang-65a3141b4/">
-                  More information about me on Linekdin
-                </a>
           </div>
           <!-- /END Project -->
 
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+              	<a href = "https://github.com/weihaozhaung">
+                <h3 class="project-wrapper__text-title">More projects</h3></a>
+                <div>
+                  <p class="mb-4">
+                    Most of the projects are under NDA. I can only display public information or my side projects. To see part of my past work -> Check my Github repositories.   
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/WHZ_git.gif"
+                      width:100%
+                      height:auto
+                    />
+                  </div>
+                </a>
+              </div>
+            </div> 
+          </div>
+          <!-- /END Project -->
 
         </div>
       </div>
